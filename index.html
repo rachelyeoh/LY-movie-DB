@@ -1,0 +1,484 @@
+<!-- /**
+ * Author: Li Chuan Yeoh (Rachel)
+ * This is the HTML for LY Movie DB
+ */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Local CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome icons -->
+    <!-- <script src="https://kit.fontawesome.com/8345c84b58.js" crossorigin="anonymous"></script> -->
+    <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+    <!-- Lightslider carousel -->
+    <script src="JQuery3.6.js"></script>
+  </head>
+  <body>
+    <!-- START OF NAV BAR -->
+    <nav class="navbar-container">
+      <!-- LOGO -->
+      <div id="logo">
+        <img class="logo-light" src="images/logo-light.png" alt="logo" />
+        <img class="logo-dark" src="images/logo-dark.png" alt="logo" />
+      </div>
+      <!-- SEARCH BAR -->
+      <form class="search-bar">
+        <input
+          id="search-input"
+          type="text"
+          name="search"
+          placeholder="Search movies..."
+        />
+
+        <a class="search-button" href="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <div id="search-list">
+          <div class="search-list-item hide">
+            <img src="/images/iron-man.jpg" alt="" />
+            <h3>First Slide</h3>
+            <p>2020</p>
+          </div>
+        </div>
+      </form>
+      <!-- TOGGLE LIGHT/DARK -->
+      <div class="toggle">
+        <i class="fas fa-moon toggle-icon"></i>
+        <i class="fas fa-sun toggle-icon"></i>
+        <div class="toggler"></div>
+      </div>
+    </nav>
+
+    <!-- START OF MOVIE MODAL -->
+    <div class="movie-detail-modal">
+      <div class="movie-detail-img">
+        <img src="/images/iron-man.jpg" alt="" />
+      </div>
+      <div class="movie-detail-text">
+        <h1>Iron Man</h1>
+        <p><span>Year:</span>2008</p>
+        <p><span>Guide:</span>PG-13</p>
+        <p><span>Rated:</span>7.9/10</p>
+        <p><span>Genre:</span>Action, Adventure, Sci-Fi</p>
+        <p>
+          <span>Actors:</span>Robert Downey Jr., Gwyneth Paltrow, Terrence
+          Howard
+        </p>
+        <p>
+          After being held captive in an Afghan cave, billionaire engineer Tony
+          Stark creates a unique weaponized suit of armor to fight evil.
+        </p>
+      </div>
+      <span class="modal-close">x</span>
+    </div>
+
+    <!-- START OF FEATURED MOVIE -->
+    <section id="featured">
+      <ul id="responsive">
+        <li class="item-a">
+          <div class="featured-movie-container">
+            <img id="featured-movie-image" src="/images/barbie.jpg" />
+            <h3 class="featured-movie-title">First Slide</h3>
+          </div>
+        </li>
+        <li class="item-b">
+          <div class="featured-movie-container">
+            <img id="featured-movie-image" src="/images/iron-man.jpg" />
+            <h3 class="featured-movie-title">First Slide</h3>
+          </div>
+        </li>
+        <li class="item-c">
+          <div class="featured-movie-container">
+            <img id="featured-movie-image" src="/images/barbie.jpg" />
+            <h3 class="featured-movie-title">First Slide</h3>
+          </div>
+        </li>
+        <li class="item-d">
+          <div class="featured-movie-container">
+            <img id="featured-movie-image" src="/images/barbie.jpg" />
+            <h3 class="featured-movie-title">First Slide</h3>
+          </div>
+        </li>
+        <li class="item-e">
+          <div class="featured-movie-container">
+            <img id="featured-movie-image" src="/images/barbie.jpg" />
+            <h3 class="featured-movie-title">First Slide</h3>
+          </div>
+        </li>
+        <li class="item-f">
+          <div class="featured-movie-container">
+            <img id="featured-movie-image" src="/images/barbie.jpg" />
+            <h3 class="featured-movie-title">First Slide</h3>
+          </div>
+        </li>
+        <li class="item-g">
+          <div class="featured-movie-container">
+            <img id="featured-movie-image" src="/images/barbie.jpg" />
+            <h3 class="featured-movie-title">First Slide</h3>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- START OF CONTENT -->
+    <section class="main">
+      <h1 class="category-title">NEW RELEASES</h1>
+      <div class="movie-container">
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-age">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <h1 class="category-title">POPULAR MOVIES</h1>
+      <div class="movie-container">
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-age">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <h1 class="category-title">RANDOM MOVIES</h1>
+      <div class="movie-container">
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-age">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list">
+          <div class="movie-image">
+            <img src="./images/iron-man.jpg" alt="Ironman" />
+          </div>
+          <div class="movie-details">
+            <h3 class="movie-title">Ironman</h3>
+            <span class="movie-rating">PG-13</span>
+            <span class="movie-rating">7.9</span>
+            <p class="movie-desc">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+            <div class="movie-button">
+              <button>More details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- START OF FOOTER -->
+    <footer>
+      <div class="footer">
+        <p class="copyright">
+          Copyright 2022 © All Rights Reserved by LY Movie DB.
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
